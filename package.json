@@ -11,7 +11,8 @@
     "build": "npm run build-css && react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "mocha": "mocha test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "deploy": "pm2 start server --watch"
   },
   "dependencies": {
     "classnames": "^2.2.5",
