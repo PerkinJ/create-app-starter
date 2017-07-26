@@ -1,0 +1,34 @@
+// Some best-practice CSS that's useful for most apps
+// Just remove them if they're not what you want
+html {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-size: 62.5%!important;
+  -webkit-tap-highlight-color: transparent;
+  //-webkit-user-select: none;
+  //user-select: none;
+  //IOS下可使用 -webkit-text-size-adjust禁止用户调整字体大小
+  -webkit-text-size-adjust:100%!important;
+  font-family: -apple-system,BlinkMacSystemFont,"Helvetica Neue","Hiragino Sans GB",Roboto,"Segoe UI","Microsoft YaHei","Helvetica Neue", Helvetica, "PingFang SC","\9ED1\4F53",Arial,sans-serif;
+  //页面里的字体变清晰
+  -webkit-font-smoothing: antialiased;
+  padding-top: 0rem;
+  background: #142030 url('./img/shadow.png') no-repeat;
+  // background: #142030;
+  background-size:100%;
+  background:cover;
+  background-position:50% 50%;
+  color:#fff;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}

@@ -1,0 +1,26 @@
+{
+	"apps":{
+		"name":"Website",
+		"script":"/server/index.js",
+		"env":{
+			"COMMON_VARIABLE":"true"
+		},
+		"env_production":{
+			"NODE_ENV":"production"
+		}
+	},
+	"deploy":{
+		"production":{
+			"user":"ubuntu",
+			"host":["192.168.2.31"],
+			"ref":"origin/master",
+			"repo":"git@git.coding.net:perkinj/router-react.git",
+			"path":"/www/website/production",
+			"ssh_options":"StrictHostKeyChecking=no",
+			"post-deploy":"npm install && npm run build && pm2 startOrRestart ecosystem.json --env production",
+			"env":{
+				"NODE_ENV":"production"
+			}
+		}
+	}
+}
