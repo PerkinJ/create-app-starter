@@ -12,7 +12,7 @@
     "test": "react-scripts test --env=jsdom",
     "mocha": "mocha test",
     "eject": "react-scripts eject",
-    "deploy": "pm2 start server --watch"
+    "deploy": "pm2 deploy ecosystem.json production"
   },
   "dependencies": {
     "classnames": "^2.2.5",
